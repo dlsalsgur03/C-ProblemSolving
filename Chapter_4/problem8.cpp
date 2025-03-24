@@ -29,4 +29,5 @@ int main()
 	}
 
 	cout << "면적이 100보다 큰 원은 " << cnt << "개 입니다\n";
+	delete[]c;
 }
