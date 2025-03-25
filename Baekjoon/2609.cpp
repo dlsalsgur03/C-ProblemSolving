@@ -24,7 +24,7 @@ int main() {
 		}
 	}
 	int lcm;
-	for (int i = 1; true; i++) {
+	for (int i = 1; i <= min; i++) {
 		if ((max * i) % min == 0) {
 			lcm = max * i;
 			break;
