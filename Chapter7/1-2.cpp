@@ -10,7 +10,7 @@ public:
 		this->title = title; this->price = price; this->pages = pages;
 	}
 	void show() {
-		cout << title << ' ' << price << "¿ø " << pages << " ÆäÀÌÁö" << endl;
+		cout << title << ' ' << price << "ì› " << pages << " íŽ˜ì´ì§€" << endl;
 	}
 	string getTitle() { return title; }
 	friend Book& operator+= (Book& op, int price);
@@ -31,7 +31,7 @@ int main()
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 
-	Book a("Ã»Ãá", 20000, 500), b("°í±Þ C++", 30000, 500);
+	Book a("ì²­ì¶˜", 20000, 500), b("ê³ ê¸‰ C++", 30000, 500);
 	a += 500;
 	b -= 500;
 	a.show();
