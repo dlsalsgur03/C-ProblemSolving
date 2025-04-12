@@ -6,7 +6,7 @@ class Circle {
 	int radius;
 public:
 	Circle(int radius = 0) { this->radius = radius; }
-	void show() { cout << "radius = " << radius << " ÀÎ ¿ø" << '\n'; }
+	void show() { cout << "radius = " << radius << " ì¸ ì›" << '\n'; }
 	friend Circle& operator++ (Circle& op);
 	friend Circle operator++ (Circle& op, int x);
 };
