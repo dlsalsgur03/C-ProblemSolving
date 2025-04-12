@@ -35,7 +35,7 @@ int main()
 {
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
-
+	
 	Book a("명품 C++", 30000, 500), b("고급 C++", 30000, 500);
 	if (a == 30000) cout << "정가 30000원" << '\n';
 	if (a == "명품 C++") cout << "명품 C++입니다." << '\n';
