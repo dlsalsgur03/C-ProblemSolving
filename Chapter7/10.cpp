@@ -23,7 +23,7 @@ Statistics::Statistics() {
 	nArr = new int[size];
 }
 Statistics::~Statistics() {
-	if (!nArr)
+	if (nArr)
 		delete[]nArr;
 }
 void Statistics::resize() {
@@ -68,10 +68,10 @@ int main()
 	cin.tie(NULL);
 
 	Statistics stat;
-	if (!stat) cout << "ÇöÀç Åë°è µ¥ÀÌÅÍ°¡ ¾ø½À´Ï´Ù." << '\n';
+	if (!stat) cout << "í˜„ìž¬ í†µê³„ ë°ì´í„°ê°€ ì—†ìŠµë‹ˆë‹¤." << '\n';
 
 	int x[5];
-	cout << "5 °³ÀÇ Á¤¼ö¸¦ ÀÔ·ÂÇÏ¶ó>> ";
+	cout << "5 ê°œì˜ ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ë¼>> ";
 	for (int i = 0; i < 5; i++) cin >> x[i];
 
 	for (int i = 0; i < 5; i++) stat << x[i];
