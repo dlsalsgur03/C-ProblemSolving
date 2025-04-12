@@ -21,7 +21,7 @@ Stack::Stack() {
 	arr = new int[size];
 }
 Stack::~Stack() {
-	if (!arr)
+	if (arr)
 		delete[]arr;
 }
 void Stack::resize() {
