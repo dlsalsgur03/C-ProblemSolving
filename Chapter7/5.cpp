@@ -38,7 +38,7 @@ int main()
 
 	Color fuchsia(255, 0, 255);
 	if (c == fuchsia)
-		cout << "º¸¶ó»ö ¸ÂÀ½";
+		cout << "ë³´ë¼ìƒ‰ ë§žìŒ";
 	else
-		cout << "º¸¶ó»ö ¾Æ´Ô";
+		cout << "ë³´ë¼ìƒ‰ ì•„ë‹˜";
 }
