@@ -23,9 +23,10 @@ public:
 class WonToDollar : public Converter {
 	string src;
 	string dest;
+protected:
 	double convert(double src);
-	string getSourceString();
-	string getDestString();
+	string getSourceString() { return src; }
+	string getDestString() { return dest; }
 public:
 	WonToDollar(double ratio) : Converter(ratio) { src = "¿ø"; dest = "´Þ·¯"; }
 };
@@ -35,8 +36,23 @@ double WonToDollar::convert(double src) {
 	tmp = src / ratio;
 	return tmp;
 }
-string WonToDollar::getSourceString() { return src; }
-string WonToDollar::getDestString() { return dest; }
+
+class KmToMile : public Converter {
+	string src;
+	string dest;
+protected:
+	double convert(double src);
+	string getSourceString() { return src; }
+	string getDestString() { return dest; }
+public:
+	KmToMile(double ratio) : Converter(ratio) { src = "Km"; dest = "Mile"; }
+};
+
+double KmToMile::convert(double src) {
+	double tmp;
+	tmp = src / ratio;
+	return tmp;
+}
 
 int main()
 {
@@ -45,4 +61,7 @@ int main()
 
 	WonToDollar wtd(1010);
 	wtd.run();
+
+	KmToMile ktm(1.609344);
+	ktm.run();
 }
